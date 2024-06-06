@@ -18,7 +18,7 @@ pipeline {
             steps {
                 // Restart Docker containers
                 script {
-                    def composeFilePath = '/var/www/consignment-app/docker-compose.yml'
+                    def composeFilePath = '/var/www/raghil-consignment/docker-compose.yml'
                     sh "docker-compose -f ${composeFilePath} down"
                     sh "docker-compose -f ${composeFilePath} up -d --build"
                 }
