@@ -1,0 +1,12 @@
+.bg {
+    position: absolute; 
+    height: 110%; 
+    width: 100%;
+    background-color: #14192b;
+    /* background-image: url("../images/bg.png");  */
+    background-size: cover; 
+    background-position: center; 
+    position: fixed;
+    z-index: -1; 
+    top: 0;
+}
