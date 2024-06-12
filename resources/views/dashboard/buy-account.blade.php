@@ -1,8 +1,18 @@
+<link rel="stylesheet" href="{{ asset('css/product.css') }}">
+
 <div class="container">
-    <div class="row g-2" style="">
+    <div class="row g-3">
         @for ($i = 0; $i < 9; $i++)
-            <div class="col-md-2 col-4 my-lg-3 ">
-                <img src="{{ asset('images/banner/pubg-banner.jpg') }}" class="img-fluid" style="border-radius: 20px" alt="banner">
+            <div class="col-md-4 col-lg-3 col-xxl-2 col-4 ">
+                <div class="card border-radius hover-zoom">
+                    <img src="{{ asset('images/banner/mole-banner.jpg') }}" class="img-fluid border-radius" alt="banner">
+                    <a href="#buy-account" class="text-light"> 
+                        <div class="card-img-overlay text-center bg-semi-transparent justify-content-end rounded-0 text-hover">
+                            <h5 class="card-title fs-6 fw-bold">Mobile Legend Bang Bang</h5>
+                            <p class="card-text"><small>MOONTON</small></p>
+                        </div>
+                    </a>
+                </div>
             </div>
         @endfor
     </div>

@@ -6,3 +6,18 @@ img {
     border-radius: 20px;
     background-color: #0e101d;
 }
+
+.hover-zoom:hover img {
+    opacity: 0.3;
+    transition: 0.7s ease;
+}
+
+.text-hover{
+    visibility: hidden;
+}
+
+.hover-zoom:hover .text-hover {
+    visibility: visible;
+    transform: translate(0%, 0%);
+    -ms-transform: translate(-50%, -50%);
+}

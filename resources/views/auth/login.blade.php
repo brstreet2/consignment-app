@@ -100,13 +100,13 @@
                                 </div>
 
                                 <h3>Belum punya akun ?</h3>
+                                <li class="nav h3">
                                     <div class="col-12 d-flex justify-content-center">
-                                        <li class="nav h3">
-                                            <a class="nav-link text-white-50 fw-bold h3 nav-link"   data-bs-toggle="tab" href="#register">Daftar Sekarang</a>
-                                        
+                                            <a class="nav-link text-white-50 fw-bold h3 nav-link" data-bs-toggle="tab" href="#register">
+                                                Daftar Sekarang
+                                            </a>
                                     </div>
-                                </li> 
-                                        
+                                </li>     
                 
                             </div>
                         </div>
