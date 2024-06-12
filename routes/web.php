@@ -3,13 +3,15 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'home'])->name('');
+Route::get('/', [HomeController::class, 'home'])->name('home');
+Route::get('/login', function(){ return view('auth.login'); })->name('login');
 
-Route::group([
-    'middleware' => [
-        '',
-        ''
-    ],
-    'prefix'     => '',
-], function () {
-});
+// contoh routing 
+// Route::group([
+//     'middleware' => [
+//         '',
+//         ''
+//     ],
+//     'prefix'     => '',
+// ], function () {
+// });

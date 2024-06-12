@@ -11,6 +11,25 @@
     top: 0;
 }
 
+#category {
+    background-color: #0e101d;
+    border-color: rgb(144, 147, 147);
+    border-width: 3px;
+    color: aliceblue;
+}
+#category:hover {
+    color: rgb(255, 168, 66);
+    border-color: rgb(255, 168, 66);
+    box-shadow: 5px 5px 5px 0px rgba(255, 168, 66, 0.8);
+    filter: drop-shadow(5px 5px 5px rgba(255, 168, 66, 0.8));
+}
+
+#nav-search {
+    border-bottom-left-radius: 13px; 
+    border-start-start-radius: 13px; 
+    background-color: #1e253f;
+}
+
 @media only screen and (max-width: 768px) {
     .navbar-brand {
         text-align: center; /* Pusatkan logo */

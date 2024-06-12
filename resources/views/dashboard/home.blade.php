@@ -1,31 +1,23 @@
 @extends('layouts.navbar')
 @section('content')
 
-<link rel="stylesheet" href="{{ url('css/home.css') }}">
-
 <div>
     <div class="bg"></div>
 
     @include('dashboard.banner-carousel')
 
-
-    <div class="container my-4">
+    <div class="container mt-4 mb-2">
         <div class="d-flex">
-            <button type="button" class="btn btn-transparent btn-outline-light position-relative" style="border-radius: 13px">
+            <button type="button" id="category" class="mx-2 btn btn-transparent shadow-lg rounded-pill">
                 TOP UP
+            </button>
+            <button type="button" id="category" class="mx-2 btn btn-transparent shadow-lg rounded-pill">
+                BELI AKUN
             </button>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row g-2" style="">
-            @for ($i = 0; $i < 9; $i++)
-                <div class="col-md-2 col-4 my-lg-3 ">
-                    <img src="{{ asset('images/banner/mole-banner.jpg') }}" class="img-fluid" style="border-radius: 20px" alt="banner">
-                </div>
-            @endfor
-        </div>
-    </div>
-     
+    @include('dashboard.top-up')
+
 </div>
 @endsection
