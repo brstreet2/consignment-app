@@ -1,0 +1,30 @@
+/* product detail */
+.bg-banner img {
+    border-radius: 20px; 
+    max-height: 45dvh;
+    
+    box-shadow: 0px 0px 25px 0px rgba(19, 40, 102, 0.471);
+    filter: drop-shadow(0px 0px 25px rgb(19, 40, 102, 0.471));
+}
+
+.w-10 {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    width: 150px;
+
+    box-shadow: 0px 0px 25px 0px rgba(19, 40, 102, 0.471);
+    filter: drop-shadow(0px 0px 25px rgb(19, 40, 102, 0.471));
+}
+
+.card {
+    top: 100px;
+}
+
+.card-dark {
+    background-color: #252f45e6;
+}
+
+.card-darken {
+    background-color: #141925;
+}

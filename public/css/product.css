@@ -9,15 +9,15 @@ img {
 
 .hover-zoom:hover img {
     opacity: 0.3;
-    transition: 0.7s ease;
+    transition: 0.3s ease;
+    width: 100%;
 }
 
 .text-hover{
+    background: linear-gradient(to top, #0e101d, #0e101d00);
     visibility: hidden;
 }
-
+    
 .hover-zoom:hover .text-hover {
     visibility: visible;
-    transform: translate(0%, 0%);
-    -ms-transform: translate(-50%, -50%);
 }

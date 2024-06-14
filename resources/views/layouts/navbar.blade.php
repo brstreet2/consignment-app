@@ -59,15 +59,13 @@
                         <div class="col-md-12 d-flex justify-content-between">
 
                             <div class="">
-                                <a href="{{ route('login') }}" class="btn btn-dark position-relative h-100 px-4 py-2"
-                                    style="background-color: #ffa842; border-radius: 10px">
+                                <a href="{{ route('login') }}" class="btn btn-warning position-relative h-100 px-4 py-2">
                                     Masuk
                                 </a>
                             </div>
 
                             <div class="">
-                                <a href="{{ route('login') }}" class=" btn btn-light btn-hover position-relative h-100 px-4 py-2"
-                                    style="background-color: #FFF6E0; border-radius: 10px; color: #ffa842">
+                                <a href="{{ route('login') }}" class=" btn btn-light btn-hover position-relative h-100 px-4 py-2">
                                     Daftar
                                 </a>
                             </div>
