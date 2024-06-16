@@ -201,9 +201,50 @@
                     </div>
                 </div>
 
-                {{-- SEND Button --}}
+                {{-- SEND Button / modal trigger --}}
                 <div class="card my-3 rounded-5 bg-transparent">
-                    <button class="btn btn-warning py-3">~~~~ Konfirmasi Pesanan ~~~~</button>
+                    <button class="btn btn-warning py-3" data-bs-toggle="modal" data-bs-target="#buyConfirmation">~~~~ Konfirmasi Pesanan ~~~~</button>
+                </div>
+                
+                <!-- Modal -->
+                <div class="modal fade" style="top: 10%" id="buyConfirmation" tabindex="-1" aria-labelledby="buyConfirmationLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-dark px-5 pt-5 pb-4 rounded-5">
+
+                                <h5 class="fw-bold text-center">Detail Order Kamu</h5>
+
+                            <div class="d-flex justify-content-between">
+                                <p>Tujuan</p>
+                                <p>12345678</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Nickname</p>
+                                <p>Azkuy</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Produk</p>
+                                <p>6000 Diamonds</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Metode Pembayaran</p>
+                                <p>QRIS</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Total Belanja</p>
+                                <p>Rp 2.000.000</p>
+                            </div>
+
+                            <div class="row d-flex justify-content-between">
+                                <div class="col-5">
+                                    <button class="btn btn-light col-12 py-2" data-bs-dismiss="modal">cancel</button>
+                                </div>
+                                <div class="col-7">
+                                    <button class="btn btn-warning col-12 py-2">Lanjut Pembayaran</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>       
