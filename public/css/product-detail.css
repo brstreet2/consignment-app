@@ -28,3 +28,24 @@
 .card-darken {
     background-color: #141925;
 }
+
+.form-check img {
+    border-radius: 0;
+}
+
+
+
+
+#accordion-item {
+    background: transparent;
+    border-inline: 1px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+
+#accordion-button {
+    border-radius: 1rem 1rem 0 0;
+}
+
+#accordion-button.collapsed {
+    border-radius: 1rem;
+}
