@@ -135,7 +135,7 @@
         </div>
 
         {{-- Register --}}
-        <div class=" fade text-dark" id="register">
+        {{-- <div class=" fade text-dark" id="register">
             <div class="container border-bottom">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="card text-white card-mobile">
@@ -176,8 +176,8 @@
                     </div>
                 </div>
             </div>
-
-        </div>
+                
+        </div> --}}
     </div>
 </div>
 
