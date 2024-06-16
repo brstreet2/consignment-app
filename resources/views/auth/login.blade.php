@@ -40,8 +40,17 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span> --}}
-                <input type="email" placeholder="Email" class="rounded-pill" />
-                <input type="password" placeholder="Password" class="rounded-pill" />
+                <input type="email" placeholder="Email" name="email" class="rounded-pill" />
+                @error('email')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+                <input type="password" placeholder="Password" name="password" class="rounded-pill" />
+                @error('password')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+                @if (Session::has('error'))
+                    <span class="text-danger">{{ Session::get('error') }}</span>
+                @endif
                 <a href="#">Lupa Password?</a>
                 <button type="submit">Masuk</button>
             </form>
