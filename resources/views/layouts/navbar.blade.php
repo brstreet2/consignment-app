@@ -62,7 +62,7 @@
                         <div class="col-md-12 d-flex justify-content-between">
                             @if (Auth::check())
                                 <div class="">
-                                    <a href="{{ route('auth.index') }}"
+                                    <a href="{{ route('auth.logout') }}"
                                         class="btn btn-danger position-relative h-100 px-4 py-2">
                                         Logout
                                     </a>
