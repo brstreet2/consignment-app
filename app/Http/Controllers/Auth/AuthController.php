@@ -36,6 +36,7 @@ class AuthController extends Controller
 
             return back()->with("success", 'Congrats ' . $user->name . ', you have successfully created an account.');
         } catch (\Exception $e) {
+            DB::rollBack();
             return back()->with("error", 'Something went wrong with our server.');
             Log::error($e->getMessage());
         }

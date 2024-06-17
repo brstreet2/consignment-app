@@ -33,7 +33,21 @@
     border-radius: 0;
 }
 
+.custom-radio input[type="radio"] {
+    display: none;
+}
 
+.custom-radio input[type="radio"] + label {
+    border: 3px solid #99999a;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.custom-radio input[type="radio"]:checked + label {
+    transition: border-color 0.2s ease-in, background-color 0.3s ease-in-out;
+    background-color: #00000082;
+    border-color: #ffa842;
+}
 
 
 #accordion-item {

@@ -44,11 +44,11 @@
 
                 {{-- Search --}}
                 <div class="col-md-5 d-flex justify">
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <form class="submit">
                             <div class="input-group">
                                 <input type="search" id="nav-search"
-                                    class=" btn btn-outline-dark py-2 text-light shadow-none text-start"
+                                    class=" btn btn-outline-dark py-2 text-light shadow-none text-start col-10"
                                     placeholder="Mau top up apa hari ini?">
                                 <button class="btn text-secondary shadow-none" type="submit" id="search-button"
                                     style="border-start-end-radius: 13px; border-bottom-right-radius: 13px; background-color: #1e253f;">
@@ -58,14 +58,21 @@
                         </form>
                     </div>
 
-                    <div class="col-md-6 ">
-                        <div class="col-md-12 d-flex justify-content-between">
+                    <div class="col-md-5">
+                        <div class="col-md-12 d-flex justify-content-around">
                             @if (Auth::check())
                                 <div class="">
                                     <a href="{{ route('auth.logout') }}"
                                         class="btn btn-danger position-relative h-100 px-4 py-2">
                                         Logout
                                     </a>
+                                </div>
+
+                                {{-- Profile DLL --}}
+                                <div class="">
+                                    <button class="btn btn-dark h-100 w-100" style="border-radius: 10px">
+                                        <i class="fa-solid fa-grip"></i>
+                                    </button>
                                 </div>
                             @else
                                 <div class="">
@@ -82,11 +89,6 @@
                                     </a>
                                 </div>
 
-                                <div class="">
-                                    <button class="btn btn-dark h-100 w-100" style="border-radius: 10px">
-                                        <i class="fa-solid fa-grip"></i>
-                                    </button>
-                                </div>
                             @endif
                         </div>
 

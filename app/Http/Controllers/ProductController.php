@@ -8,4 +8,9 @@ class ProductController extends Controller
     {
         return view('top-up.index');
     }
+
+    public function payment()
+    {
+        return view('payment.index');
+    }
 }

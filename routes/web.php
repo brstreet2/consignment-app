@@ -8,7 +8,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
 
+// START {FE dummy Route Field}
+
 Route::get('/top-up/name', [ProductController::class, 'index'])->name('product.index');
+Route::get('/payment/token123', [ProductController::class, 'payment'])->name('product.payment');
+
+// END {FE dummy Route Field}
 
 
 // contoh routing 
@@ -20,6 +25,7 @@ Route::get('/top-up/name', [ProductController::class, 'index'])->name('product.i
 //     'prefix'     => '',
 // ], function () {
 // });
+
 
 // Auth
 Route::group(['prefix' => 'auth'], function () {

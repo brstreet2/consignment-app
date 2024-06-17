@@ -1,6 +1,5 @@
 body {
     background-color: #14192b;
-    /* padding-top: 50px; */
 }
 
 /* sidebar */
@@ -18,7 +17,6 @@ body {
     color: #000000;
 }
 
-
 /*  global */
 .rounded-1{
     border-radius: 4px;
@@ -35,6 +33,27 @@ body {
 .rounded-5{
     border-radius: 20px;
 }
+
+.bg-grey {
+    background-color: #52545b;
+}
+
+.bg-dark-secondary {
+    background-color: #252f45e6;
+}
+
+.bg-transparent {
+    background-color: #ffffff00;
+}
+
+.bg-semi-transparent {
+    background-color: #14192bbf;
+    top: 73%;
+}
+
+.text-yellow {
+    color: #ffa842;
+}
 /* END global */
 
 .bg {
@@ -48,19 +67,6 @@ body {
     position: fixed;
     z-index: -1;
     top: 0;
-}
-
-.bg-grey {
-    background-color: #52545b;
-}
-
-.bg-transparent {
-    background-color: #ffffff00;
-}
-
-.bg-semi-transparent {
-    background-color: #14192bbf;
-    top: 73%;
 }
 
 .btn-warning {
