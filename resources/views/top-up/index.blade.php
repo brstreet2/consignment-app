@@ -14,7 +14,7 @@
         </div>
 
 
-        <div class="row d-flex justify-content-around">
+        <div class="row d-flex justify-content-around mt-5">
             {{-- kiri --}}
             <div class="col-8">
                 <div class="card card-dark my-2 p-2 rounded-5">
@@ -34,37 +34,57 @@
 
                 <div class="card card-dark my-4 p-2 rounded-5">
                     <div class="card-body">
-                        <h5 class="card-title mb-4">1. Mau Top Up yang Berapa? <label class="text-danger">*</label></h5>
-                        <h6 class="card-subtitle text-muted mb-3">
-                            ⚡ Top Up Instant
-                        </h6>
-                        <div class="d-flex row g-4">
-                            @for ($i = 1; $i < 6; $i++)
-                                <div class="col-4">
-                                    <div class="custom-radio">
-                                        <input type="radio" id="game-{{ $i }}" name="product" class="product" value="{{ 50 * $i }} Diamonds" style="display: none">
-                                        <label for="game-{{ $i }}" class="text-light col-12 rounded-5">
-                                            <div class="card-body text-center ">
-                                                <div class="align-items-center">
-                                                    <img src="{{ asset('images/logo-cash/diamonds-mole.png') }}" width="30" alt="">
-                                                    <p>{{ 50 * $i }} Diamonds <br><small class="card-title fw-bold" id="nominal">Rp {{ number_format(10000 * $i, 0,',','.') }},-</small></p>
+                        <!-- Nav tabs -->
+                        <div class="d-flex">
+                            <div class="nav" id="myTab" role="tablist">
+                                <button type="button" id="category" class="active mx-2 py-2 px-5 btn btn-transparent shadow-lg rounded-pill" data-bs-toggle="tab" data-bs-target="#detail" role="tab" aria-controls="detail" aria-selected="true">
+                                    Detail
+                                </button>
+                                <button type="button" id="category" class="mx-2 py-2 px-5 btn btn-transparent shadow-lg rounded-pill" data-bs-toggle="tab" data-bs-target="#review" role="tab" aria-controls="review">
+                                    Ulasan
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="detail" role="tabpanel" aria-labelledby="detail-tab" tabindex="0">
+                                <div class=" card- my-1 rounded-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-4">1. Mau Top Up yang Berapa? <label class="text-danger">*</label></h5>
+                                        <h6 class="card-subtitle text-muted mb-3">
+                                            ⚡ Top Up Instant
+                                        </h6>
+                                        <div class="d-flex row g-4">
+                                            @for ($i = 1; $i < 6; $i++)
+                                                <div class="col-4">
+                                                    <div class="custom-radio">
+                                                        <input type="radio" id="game-{{ $i }}" name="product" class="product" value="{{ 50 * $i }} Diamonds" style="display: none">
+                                                        <label for="game-{{ $i }}" class="text-light col-12 rounded-5">
+                                                            <div class="card-body text-center ">
+                                                                <div class="align-items-center">
+                                                                    <img src="{{ asset('images/logo-cash/diamonds-mole.png') }}" width="30" alt="">
+                                                                    <p>{{ 50 * $i }} Diamonds <br><small class="card-title fw-bold" id="nominal">Rp {{ number_format(10000 * $i, 0,',','.') }},-</small></p>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
+                                            @endfor
+                                        </div>
                                     </div>
                                 </div>
-                            @endfor
+                            </div>
+                            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab" tabindex="0">
+                                <div class=" my-4 p-2 rounded-5">
+                                    <h5 class="card-title mb-4">Ulasan Produk</h5>
+                                    <div>asd</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                {{-- Ulasan --}}
-                <div class="card card-dark my-4 p-2 rounded-5">
-                    <div class="card-body">
-                        <h5 class="card-title mb-4">Ulasan Produk</h5>
-                        
-                    </div>
-                </div>
             </div>
 
             {{-- kanan --}}
@@ -72,8 +92,26 @@
                 {{-- Informasi Akun --}}
                 <div class="card p-2 my-2 rounded-5" style="background-color: #252f45e6">
                     <div class="card-body">
-                        <h5 class="card-title">2. Informasi Akun <label class="text-danger">*</label></h5>
+                        <h5 class="card-title">2. Informasi Akun <i class="bi bi-question-circle fs-6" data-bs-toggle="modal" data-bs-target="#UID"></i> <label class="text-danger">*</label></h5>
                     </div>
+
+                    {{-- modal START--}}
+                        <div class="modal fade " id="UID" tabindex="-1" aria-labelledby="UIDLabel" aria-hidden="true">
+                            <div class="d-flex align-items-center h-100">
+                                <div class="modal-dialog">
+                                    <div class="modal-content text-warning p-4 rounded-5 bg-secondary">
+                                        <div class="mb-3 text-end">
+                                            <button type="button" class="btn-close bg-danger " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div>
+                                            <img src="https://sin1.contabostorage.com/b1d79b8bbee7475eab6c15cd3d13cd4d:hopestore/p/1702308854an_MLBB.webp" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{-- modal END --}}
+
                     <div class="card-body">
                         <div>
                             <div>
@@ -130,7 +168,7 @@
                                         <button class="btn btn-dark col-12 py-2 rounded-3 bg-primary">
                                             <div class="form-check">
                                                 <input class="form-check-input payment-method" type="radio" name="payment-method" id="QRIS" value="QRIS">
-                                                <label class="d-flex justify-content-between form-check-label text-light fw-bold" for="QRIS">
+                                                <label class="d-flex justify-content-between form-check-label text-light fw-bold" for="QRIS" onclick="window.location.href='#payment'">
                                                     QRIS
                                                     <img src="{{ asset('images/payments/qris.png') }}" width="60" alt="">
                                                 </label>
@@ -142,7 +180,7 @@
                                         <button class="btn btn-dark col-12 py-2 rounded-3 bg-light">
                                             <div class="form-check">
                                                 <input class="form-check-input payment-method" type="radio" name="payment-method" id="ShopeePay" value="ShopeePay">
-                                                <label class="d-flex justify-content-between form-check-label text-danger" for="ShopeePay">
+                                                <label class="d-flex justify-content-between form-check-label text-danger" for="ShopeePay"onclick="window.location.href='#payment'">
                                                     ShopeePay
                                                     <img src="{{ asset('images/payments/spay.png') }}" width="60" alt="">
                                                 </label>
@@ -164,7 +202,7 @@
                                         <button class="btn btn-dark col-12 py-2 rounded-3 bg-light">
                                             <div class="form-check">
                                                 <input class="form-check-input payment-method" type="radio" name="payment-method" id="BCA" value="BCA">
-                                                <label class="d-flex justify-content-between form-check-label text-primary fw-bold" for="BCA">
+                                                <label class="d-flex justify-content-between form-check-label text-primary fw-bold" for="BCA" onclick="window.location.href='#payment'">
                                                     BCA
                                                     <img src="{{ asset('images/payments/bca.png') }}" width="60" alt="">
                                                 </label>
@@ -176,7 +214,7 @@
                                         <button class="btn btn-dark col-12 py-2 rounded-3 bg-light">
                                             <div class="form-check">
                                                 <input class="form-check-input payment-method" type="radio" name="payment-method" id="BNI" value="BNI">
-                                                <label class="d-flex justify-content-between form-check-label text-danger fw-bold" for="BNI">
+                                                <label class="d-flex justify-content-between form-check-label text-danger fw-bold" for="BNI" onclick="window.location.href='#payment'">
                                                     BNI
                                                     <img src="{{ asset('images/payments/bni.png') }}" width="60" alt="">
                                                 </label>
@@ -205,11 +243,11 @@
                 </div>
 
                 {{-- SEND Button / modal trigger --}}
-                <div class="card my-3 rounded-5 bg-transparent">
+                <div class="card my-3 rounded-5 bg-transparent" id="payment">
                     <button class="btn btn-warning py-3" data-bs-toggle="modal" data-bs-target="#buyConfirmation">~~~~ Konfirmasi Pesanan ~~~~</button>
                 </div>
                 
-                <!-- Modal -->
+                {{-- Modal Payment --}}
                 <div class="modal fade" style="top: 10%" id="buyConfirmation" tabindex="-1" aria-labelledby="buyConfirmationLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content text-dark px-5 pt-4 pb-4 rounded-5">

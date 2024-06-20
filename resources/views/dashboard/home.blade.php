@@ -6,10 +6,10 @@
 
     <div class="d-flex justify-content-center">
         {{-- sidebar on XXL --}}
-        <div class="d-none d-lg-block col-xxl-2">
-            <div class="d-lg-block px-2 mt-3 sticky-top sticky-offset">
-                <div class="bg-dark rounded-5 overflow-auto">
-                    <div class="p-4" style="background-color: #1f2943">
+        <div class="d-none d-lg-block col-xxl-2 bg-transparent" >
+            <div class="d-lg-block mt-3 sticky-top sticky-offset">
+                <div class="rounded-3 overflow-auto m-2">
+                    <div class="p-4 bg-dark-secondary">
                         <h6 class="fw-bold">MENU</h6>
                         <div class="hover-card-yellow rounded-3 p-2">
                             <a href="#" class="mx-1 text-decoration-none"><i class="fa-solid fa-house mx-2 {{ (request()->route()->getName() == 'home') ? 'text-yellow' : '' }}"></i> <small class="{{ (request()->route()->getName() == 'home') ? 'text-yellow' : '' }} fs-6">Beranda</small></a><br>

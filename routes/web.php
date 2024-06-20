@@ -10,7 +10,8 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 
 // START {FE dummy Route Field}
 
-Route::get('/top-up/name', [ProductController::class, 'index'])->name('product.index');
+Route::get('/top-up/name', [ProductController::class, 'topUpIndex'])->name('top-up.index');
+Route::get('/buy-account/name', [ProductController::class, 'buyAccountIndex'])->name('buy-account.index');
 Route::get('/payment/token123', [ProductController::class, 'payment'])->name('product.payment');
 
 // END {FE dummy Route Field}

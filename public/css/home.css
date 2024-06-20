@@ -46,11 +46,6 @@ body {
     background-color: #ffffff00;
 }
 
-.bg-semi-transparent {
-    background-color: #14192bbf;
-    top: 73%;
-}
-
 .text-yellow {
     color: #ffa842;
 }
@@ -87,8 +82,12 @@ body {
     border-width: 3px;
     color: aliceblue;
 }
+#category.active{
+    background-color: rgb(255, 168, 66);
+    border-color: rgb(255, 168, 66);
+}
 #category:hover {
-    color: rgb(255, 168, 66);
+    color: rgb(255, 255, 255);
     border-color: rgb(255, 168, 66);
     box-shadow: 5px 5px 5px 0px rgba(255, 168, 66, 0.8);
     filter: drop-shadow(5px 5px 5px rgba(255, 168, 66, 0.8));

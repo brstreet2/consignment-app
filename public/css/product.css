@@ -1,9 +1,4 @@
-img {
-    border-radius: 20px;
-}
-
 .border-radius {
-    border-radius: 20px;
     background-color: #0e101d;
 }
 
@@ -13,6 +8,17 @@ img {
     width: 100%;
 }
 
+.hoverImage {
+    position: relative;
+    align-self: stretch;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}  
+
 .text-hover{
     background: linear-gradient(to top, #0e101d, #0e101d00);
     visibility: hidden;
@@ -20,4 +26,12 @@ img {
     
 .hover-zoom:hover .text-hover {
     visibility: visible;
+}
+.hover-zoom:hover {
+    transition: all ease-out 0.5s;
+}
+
+.bg-semi-transparent {
+    background-color: #14192bbf;
+    top: 13%;
 }
