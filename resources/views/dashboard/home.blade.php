@@ -7,33 +7,7 @@
     <div class="d-flex justify-content-center">
         {{-- sidebar on XXL --}}
         <div class="d-none d-lg-block col-xxl-2 bg-transparent" >
-            <div class="d-lg-block mt-3 sticky-top sticky-offset">
-                <div class="rounded-3 overflow-auto m-2">
-                    <div class="p-4 bg-dark-secondary">
-                        <h6 class="fw-bold">MENU</h6>
-                        <div class="hover-card-yellow rounded-3 p-2">
-                            <a href="#" class="mx-1 text-decoration-none"><i class="fa-solid fa-house mx-2 {{ (request()->route()->getName() == 'home') ? 'text-yellow' : '' }}"></i> <small class="{{ (request()->route()->getName() == 'home') ? 'text-yellow' : '' }} fs-6">Beranda</small></a><br>
-                        </div>
-                        <div class="hover-card-yellow rounded-3 p-2">
-                            <a href="#" class="mx-1 text-decoration-none"><i class="fa-solid fa-gamepad mx-2"></i> Semua Game</a><br>
-                        </div>
-                        <div class="hover-card-yellow rounded-3 p-2">
-                            <a href="#" class="mx-1 text-decoration-none"><i class="fa-solid fa-magnifying-glass mx-2"></i> Cek Transaksi</a><br>
-                        </div>
-                        <h6 class="mt-2 fw-bold">NAVIGASI</h6>
-                        <div class="hover-card-yellow rounded-3 p-2">
-                            <a href="#" class="mx-1 text-decoration-none"><i class="fa-solid fa-list mx-2"></i> Daftar Transaksi</a><br>
-                        </div>      
-                        <div class="hover-card-yellow rounded-3 p-2">
-                            <a href="#" class="mx-1 text-decoration-none"><i class="fa-solid fa-question mx-2"></i> FAQ</a><br>
-                        </div>
-                        <div class="hover-card-yellow rounded-3 p-2">
-                            <a href="#" class="mx-1 text-decoration-none"><i class="fa-solid fa-phone mx-2"></i> Hubungi Kami</a><br>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            @include('layouts.sidebar')
         </div>
 
         {{-- content --}}

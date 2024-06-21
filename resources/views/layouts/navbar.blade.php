@@ -26,7 +26,7 @@
 <body>
     {{-- desktop (xxl) --}}
     <div class="d-none d-xxl-block sticky-top">
-        <nav class=" navbar navbar-light p-3" style="background-color: #121727f5; backdrop-filter: blur(13.59px);">
+        <nav class="navbar navbar-light p-3" style="background-color: #121727f5; backdrop-filter: blur(13.59px);">
             <div class="container ">
 
                 {{-- Logo --}}
