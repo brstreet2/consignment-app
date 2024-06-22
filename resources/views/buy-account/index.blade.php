@@ -57,7 +57,7 @@
                             <span class="badge text-light mx-3 bg-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Akun yang kamu beli terjamin aman">Anti Hackback</span>
                         </div>
                         <div class="card mt-4 d-flex align-items-center bg-success rounded-4">
-                            <p class="text-light p-3 h4 fw-bold">
+                            <p class="text-light p-4 h4 fw-bold my-auto">
                                 <i class="bi bi-check-circle-fill text-light"></i> Akun Masih Tersedia
                             </p>
                         </div>
