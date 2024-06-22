@@ -1,5 +1,9 @@
 body {
     background-color: #14192b;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 100; */
+    font-style: normal;
 }
 
 /* sidebar */
@@ -48,6 +52,10 @@ body {
 
 .text-yellow {
     color: #ffa842;
+}
+
+.pointer {
+    cursor: pointer;
 }
 /* END global */
 

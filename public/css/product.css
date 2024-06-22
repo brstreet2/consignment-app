@@ -35,3 +35,11 @@
     background-color: #14192bbf;
     top: 13%;
 }
+
+.max-75px {
+    min-width: 75px; 
+    max-width: 75px; 
+    
+    min-height: 75px; 
+    max-height: 75px;
+}

@@ -1,6 +1,8 @@
 @extends('layouts.navbar')
 @section('content')
 
+<link rel="stylesheet" href="{{ asset('css/product.css') }}">
+
 <div class="d-flex">
     <div class="col-xxl-2">
         @include('layouts.sidebar')
@@ -30,7 +32,7 @@
                         <div class="mt-2 d-flex justify-content-start row">
                             @for ($i = 0; $i < 5; $i++)
                                 <div class="col-2 m-1">
-                                    <img src="{{ asset('images/banner/pubg-banner.jpg') }}" class="rounded-4 img-fluid w-100" style="min-width: 75px; max-width: 75px;; min-height: 75px; max-height: 75px"data-bs-target="#carouselBanner" data-bs-slide-to="{{ $i }}"  aria-current="true" aria-label="Slide {{ $i }}">
+                                    <img src="{{ asset('images/banner/pubg-banner.jpg') }}" class="rounded-4 img-fluid w-100 max-75px pointer" data-bs-target="#carouselBanner" data-bs-slide-to="{{ $i }}"  aria-current="true" aria-label="Slide {{ $i }}">
                                 </div>
                             @endfor
                         </div>
@@ -40,7 +42,7 @@
                             <div class="col-10">
                                 <p class="h4 fw-bold">PUBG mobile Akun Sultan</p>
                             </div>
-                            <div class="col-2 text-center d-flex justify-content-between">
+                            <div class="col-2 text-center d-flex justify-content-between mx-2">
                                 <i class="bi bi-share h4"></i>
                                 <i class="bi bi-star h4"></i>
                             </div>
@@ -65,8 +67,6 @@
                     <div class="card p-3 rounded-4 bg-dark-secondary">
                         <p class="fw-bold h3">DETAIL</p>
                         <p class="text-light">
-                            Deskripsi Dagangan KZL Gaming
-                            <br><br>
                             Detail akun: (level/UC/skin/rank)
                             <br><br>
                             AKUN OLD LEVEL 79 <br>
@@ -133,7 +133,7 @@
                         <label class="mt-3" for="#phone" data-bs-toggle="tooltip" data-bs-placement="top" title="Mempermudah kamu jika terjadi kendala pada pembelian">No. Handphone:</label>
                         <input type="number" name="phone" id="phone" class="form-control btn btn-outline-dark bg-dark text-light text-start py-2" placeholder="cth: 081234567890">
 
-                        <button class="btn btn-warning mt-5 col-12">Beli Sekarang</button>
+                        <button class="btn btn-warning mt-3 col-12 py-3">Beli Sekarang</button>
                     </form>
 
                 </div>
