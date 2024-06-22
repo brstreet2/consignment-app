@@ -64,6 +64,8 @@
                 <div class="overlay-panel overlay-left">
                     <h1>Selamat Datang!</h1>
                     <p>Buat akun yuk biar pembelian kamu jadi lebih mudah</p>
+
+                    <p>Kalo udah punya akun, klik tombol di bawah ini ya</p>
                     <button class="ghost" id="signIn">Masuk</button>
                 </div>
                 <div class="overlay-panel overlay-right">

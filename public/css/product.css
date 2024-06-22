@@ -43,3 +43,8 @@
     min-height: 75px; 
     max-height: 75px;
 }
+
+.hover-shadow:hover {
+    box-shadow: 0px 0dvh 50dvh 10dvh #3e4e8734;
+    transition: box-shadow 0.3s ease-in-out;
+}

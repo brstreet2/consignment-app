@@ -12,7 +12,7 @@
         <div class="d-flex">
             <div class="col-8 py-3">
                 <div class="d-flex">
-                    <div id="carouselBanner" class="carousel slide col-6 ">
+                    <div id="carouselBanner" class="carousel slide col-6">
                         <div class="carousel-inner">
                             @for ($i = 0; $i < 5; $i++)
                                 <div class="carousel-item @if($i == 0) active @endif">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-12 mt-3">
-                    <div class="card p-3 rounded-4 bg-dark-secondary">
+                    <div class="card p-3 rounded-4 bg-dark-secondary hover-shadow">
                         <p class="fw-bold h3">DETAIL</p>
                         <p class="text-light">
                             Detail akun: (level/UC/skin/rank)
@@ -110,8 +110,8 @@
                 </div>
             </div>
             <div class="col-4 py-3 px-4">
-                <div class="card bg-dark-secondary p-3 rounded-4">
-                    <p class="fs-5 text-center fw-bold">Informasi Pesanan</p>
+                <div class="card bg-dark-secondary p-3 rounded-4 hover-shadow sticky-top sticky-offset">
+                    <p class="fs-5 text-center fw-bold ">Informasi Pesanan</p>
                     <form action="{{ route('product.payment') }}" method="get" class="">
                         @csrf
 
