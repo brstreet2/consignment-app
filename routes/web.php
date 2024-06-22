@@ -13,6 +13,8 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/top-up/name', [ProductController::class, 'topUpIndex'])->name('top-up.index');
 Route::get('/buy-account/name', [ProductController::class, 'buyAccountIndex'])->name('buy-account.index');
 Route::get('/payment/token123', [ProductController::class, 'payment'])->name('product.payment');
+Route::get('/transaction', function(){ return view('transaction.list-trx'); })->name('list.transaction');
+Route::get('/transaction/check', function(){ return view('transaction.list-trx'); })->name('check.transaction');
 
 // END {FE dummy Route Field}
 
