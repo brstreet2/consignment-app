@@ -115,17 +115,38 @@
                     <form action="{{ route('product.payment') }}" method="get" class="">
                         @csrf
 
-                        <div class="d-flex align-items-center">
-                            <p class="fs-6 fw-bold">Game: </p>
-                            <p class="mx-2 text-yellow fw-bold">PUBGm</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="fs-6 fw-bold">Game</p>
+                            </div>
+                            <div class="col-1">
+                                <p class="fw-bold">:</p>
+                            </div>
+                            <div class="col-8">
+                                <p class="text-yellow fw-bold">PUBGm</p>
+                            </div>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <p class="fs-6 fw-bold">Produk: </p>
-                            <p class="mx-2 text-yellow fw-bold">PUBGm Akun Sultan</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="fs-6 fw-bold">Produk</p>
+                            </div>
+                            <div class="col-1">
+                                <p class="fw-bold">:</p>
+                            </div>
+                            <div class="col-8">
+                                <p class="text-yellow fw-bold">PUBGm Akun Sultan</p>
+                            </div>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <p class="fs-6 fw-bold">Harga: </p>
-                            <p class="mx-2 text-yellow fw-bold">Rp970.000</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="fs-6 fw-bold">Harga</p>
+                            </div>
+                            <div class="col-1">
+                                <p class="fw-bold">:</p>
+                            </div>
+                            <div class="col-8">
+                                <p class="text-yellow fw-bold">Rp970.000</p>
+                            </div>
                         </div>
 
                         <label for="#email" data-bs-toggle="tooltip" data-bs-placement="top" title="Akun akan dikirimkan ke email di bawah ini">Email:</label>
