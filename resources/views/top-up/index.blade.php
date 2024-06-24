@@ -7,11 +7,11 @@
 <div class="d-none d-lg-block">
 
     <div class="d-flex">
-        <div class="col-xxl-2">
+        <div class="col-xxl-2 col-xl-2">
             @include('layouts.sidebar')
         </div>
 
-        <div class="col-xxl-10 container-fluid mt-3 mb-5 px-3">
+        <div class="col-xxl-10 col-xl-10 container-fluid mt-3 mb-5 px-3">
             <div class="bg-banner">
                 {{-- Image Ratio 763 x 260 --}}
                 <img src="{{ asset('images/detail-banner/mole-bg-banner.png') }}" class="rounded-4 img-fluid d-block mx-auto w-100" alt="...">
@@ -55,92 +55,11 @@
                             <div class="tab-content">
                                 <div class="tab-pane fade active show" id="detail" role="tabpanel" aria-labelledby="detail-tab" tabindex="0">
                                     <div class=" card- my-1 rounded-5">
-                                        <div class="card-body">
-                                            <h5 class="card-title mb-4">1. Mau Top Up yang Berapa? <label class="text-danger">*</label></h5>
-                                            <h6 class="card-subtitle text-muted mb-3">
-                                                ⚡ Top Up Instant
-                                            </h6>
-                                            <div class="d-flex row g-4">
-                                                @for ($i = 1; $i < 6; $i++)
-                                                    <div class="col-4">
-                                                        <div class="custom-radio">
-                                                            <input type="radio" id="game-{{ $i }}" name="product" class="product" value="{{ 50 * $i }} Diamonds" style="display: none">
-                                                            <label for="game-{{ $i }}" class="text-light col-12 rounded-5">
-                                                                <div class="card-body text-center ">
-                                                                    <div class="align-items-center">
-                                                                        <img src="{{ asset('images/logo-cash/diamonds-mole.png') }}" width="30" alt="">
-                                                                        <p>{{ 50 * $i }} Diamonds <br><small class="card-title fw-bold" id="nominal">Rp {{ number_format(10000 * $i, 0,',','.') }},-</small></p>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                @endfor
-                                            </div>
-                                        </div>
+                                        @include('top-up.product')
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab" tabindex="0">
-                                    <div class=" mt-4 p-2 rounded-5">
-                                        <h5 class="card-title mb-4">Ulasan Produk</h5>
-                                        <div class="row">
-                                            <div class="col-4 d-flex justify-content-between">
-                                                <div class="card rounded-4">
-                                                    <p class="h1 text-yellow p-3 my-1">4.9</p>
-                                                </div>
-                                                <div class="align-items-center my-auto">
-                                                    <div id="stars">
-                                                        <i class="bi bi-star-fill text-yellow fs-5"></i>
-                                                        <i class="bi bi-star-fill text-yellow fs-5"></i>
-                                                        <i class="bi bi-star-fill text-yellow fs-5"></i>
-                                                        <i class="bi bi-star-fill text-yellow fs-5"></i>
-                                                        <i class="bi bi-star-half text-yellow fs-5"></i>
-                                                    </div>
-                                                    <div>
-                                                        <small>Dari 5 Reviews</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                        </div>
-                                        @for ($i = 0; $i < 5; $i++)
-                                            <hr>
-                                            <div class="row">
-                                                <div class="col-1 my-auto">
-                                                    <img src="{{ asset('images/navbar/logo.png') }}" width="56px" alt="">
-                                                </div>
-                                                <div class="col-9 d-flex justify-content-between">
-                                                    <div class="col-7">
-                                                        <p class="fw-bold">Kal** St*** <br><small class="fw-normal">{{ date('d M Y, H:i:s', strtotime(now())) }}</small></p>
-                                                    </div>
-                                                    <div class="col-5 text-center my-auto">
-                                                        <p>100 <img src="{{ asset('images/logo-cash/diamonds-mole.png') }}" width="25px"></p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2">
-                                                    <i class="bi bi-star-fill text-yellow fs-6"></i>
-                                                    <i class="bi bi-star-fill text-yellow fs-6"></i>
-                                                    <i class="bi bi-star-fill text-yellow fs-6"></i>
-                                                    <i class="bi bi-star-fill text-yellow fs-6"></i>
-                                                    @if ($i == 0)
-                                                    <i class="bi bi-star-half text-yellow fs-6"></i>
-                                                    @else
-                                                    <i class="bi bi-star-fill text-yellow fs-6"></i>
-                                                    @endif
-                                                </div>
-                                            </div>
-                                        @endfor
-                                        <div class="mt-3 text-center">
-                                            <button class="btn btn-outline-light py-2 px-4">
-                                                Tampilkan Semua
-                                            </button>
-                                        </div>
-                                    </div>
+                                    @include('top-up.reviews')
                                 </div>
                             </div>
                         </div>

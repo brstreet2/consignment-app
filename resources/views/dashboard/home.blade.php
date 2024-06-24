@@ -6,12 +6,12 @@
 
     <div class="d-flex justify-content-center">
         {{-- sidebar on XXL --}}
-        <div class="d-none d-lg-block col-xxl-2 bg-transparent" >
+        <div class="d-none d-lg-block col-xxl-2 col-xl-2 bg-transparent" >
             @include('layouts.sidebar')
         </div>
 
         {{-- content --}}
-        <div class="col-xxl-10 col-md-12">
+        <div class="col-xxl-10 col-xl-10 col-md-12">
             @include('dashboard.banner-carousel')
         
             <!-- Nav tabs -->

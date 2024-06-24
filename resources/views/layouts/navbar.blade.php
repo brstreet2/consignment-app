@@ -109,7 +109,7 @@
     {{-- nest Hub  (only on xl) --}}
     <div class="d-none d-xl-block d-xxl-none sticky-top">
         <nav class="navbar navbar-light p-2" style="background-color: #121727b5; backdrop-filter: blur(13.59px);">
-            <div class="container">
+            <div class="container-fluid">
 
                 {{-- Logo --}}
                 <div class="col-md-6 text-start d-flex align-items-center">
@@ -164,11 +164,6 @@
                                 </a>
                             </div>
 
-                            <div class="">
-                                <button class="btn btn-dark h-100 w-100" style="border-radius: 10px">
-                                    <i class="fa-solid fa-sun" style="color: #ffa842"></i>
-                                </button>
-                            </div>
                         </div>
 
                     </div>

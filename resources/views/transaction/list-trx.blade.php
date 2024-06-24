@@ -6,13 +6,13 @@
     <div class="d-none d-lg-block">
 
         <div class="d-flex">
-            <div class="col-xxl-2">
+            <div class="col-xxl-2 col-xl-2">
                 @include('layouts.sidebar')
             </div>
     
             <div class="col-xxl-10 container-fluid mt-3 px-3">
                 <div class=" bg-dark-secondary rounded-4">
-                    <p class="h2 text-center text-dark fw-bold p-5 bg-secondary rounded-4">Transaksi Terdata</p>
+                    <p class="h2 text-center text-dark fw-bold p-5 bg-secondary rounded-4">TRANSAKSI TERDATA</p>
                     <div class="px-4 pt-3 text-start row d-flex">
                         <div class="col-3">
                             <p class="h4 fw-bold">
@@ -42,7 +42,7 @@
                                 <p>{{ date('d F Y H:i:s', strtotime(now())) }}</p>
                             </div>
                             <div class="col-3">
-                                <p>TRX**********6{{ $i }}</p>
+                                <p>KLMSTR**********6{{ $i }}</p>
                             </div>
                             <div class="col-3">
                                 <p>Rp {{ number_format(10000 * $i + 1000,0,',','.') }}</p>
@@ -65,7 +65,7 @@
                     @endfor
                 </div>
         
-                <div class="m-5">
+                <div class="m-5 text-center">
                     <p>Gak Nemu Transaksi Kamu? Coba Cari <a href="{{ route('check.transaction') }}" class="text-decoration-none">Disini</a></p>
                 </div>
             </div>
