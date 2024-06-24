@@ -57,6 +57,10 @@ body {
 .pointer {
     cursor: pointer;
 }
+
+.btn-outline-none {
+    border: transparent;
+}
 /* END global */
 
 .bg {
