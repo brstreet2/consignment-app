@@ -4,11 +4,11 @@
 <link rel="stylesheet" href="{{ asset('css/product.css') }}">
 
 <div class="d-flex">
-    <div class="col-xxl-2">
+    <div class="col-xxl-2 col-xl-2">
         @include('layouts.sidebar')
     </div>
 
-    <div class="container-fluid col-xxl-10">
+    <div class="container-fluid col-xxl-10 col-xl-10">
         <div class="d-flex">
             <div class="col-8 py-3">
                 <div class="d-flex">
