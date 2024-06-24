@@ -42,6 +42,10 @@ body {
     background-color: #52545b;
 }
 
+.bg-yellow {
+    background-color: #ffa842;
+}
+
 .bg-dark-secondary {
     background-color: #252f45e6;
 }

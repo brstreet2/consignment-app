@@ -33,11 +33,13 @@
                     <p class="h3">Mobile Legends Bang Bang</p>
                     <p class="fs-6">MOONTON</p>
                 </div>
-                {{-- <div class=""> --}}
-                    <p class="h3 bg-light text-dark text-center col-9 rounded-5 p-2">TRX1234567890MLBB</p>
-                {{-- </div> --}}
+                <p class="h4 bg-grey text-light text-center col-9 rounded-5 p-1">TRX1234567890MLBB</p>
+                
+                <small class="text-muted">Transaction Date: {{ date('d M Y, H:i:s', strtotime(now())) }}</small>
+
             </div>
             <div class="col-3 my-auto">
+                <p class="fs-6 bg-yellow text-center col-xl-5 rounded-5 p-1">PENDING</p>
                 <p>Top-Up Diamonds</p>
                 <p>150 <img src="{{ asset('images/logo-cash/diamonds-mole.png') }}" width="25px" alt=""></p>
                 <p class="text-yellow">Rp 30.000</p>
