@@ -1,10 +1,10 @@
 <div class="d-lg-block mt-3 sticky-top sticky-offset">
-    <div class="rounded-4 overflow-auto m-2 m-xl-0">
-        <div class="p-4 bg-dark">
+    <div class="rounded-4 overflow-auto m-2">
+        <div class="p-4 p-xl-3 bg-dark">
 
             <h6 class="fw-bold">MENU</h6>
             <div class="hover-card-yellow rounded-3 p-2">
-                <a href="{{ route('home') }}" class="mx-1 text-decoration-none"><i class="fa-solid fa-house mx-2 {{ (request()->route()->getName() == 'home') ? 'text-yellow' : '' }}"></i> <small class="{{ (request()->route()->getName() == 'home') ? 'text-yellow' : '' }} fs-6">Beranda</small></a><br>
+                <a href="{{ route('home') }}" class="mx-1 text-decoration-none "><i class="fa-solid fa-house mx-2 {{ (request()->route()->getName() == 'home') ? 'text-yellow' : '' }}"></i> <small class="{{ (request()->route()->getName() == 'home') ? 'text-yellow' : '' }} fs-6">Beranda</small></a><br>
             </div>
             {{-- <div class="hover-card-yellow rounded-3 p-2">
                 <a href="#" class="mx-1 text-decoration-none"><i class="fa-solid fa-gamepad mx-2"></i> Semua Game</a><br>
@@ -26,10 +26,10 @@
             
             <h6 class="mt-2 fw-bold">PENGGUNA</h6>
             <div class="hover-card-yellow rounded-3 p-2">
-                <a href="#" class="mx-1 text-decoration-none"><i class="fa-solid fa-right-to-bracket mx-2"></i> Masuk</a><br>
+                <a href="{{ route('auth.index') }}" class="mx-1 text-decoration-none"><i class="fa-solid fa-right-to-bracket mx-2"></i> Masuk</a><br>
             </div>      
             <div class="hover-card-yellow rounded-3 p-2">
-                <a href="#" class="mx-1 text-decoration-none"><i class="fa-regular fa-user mx-2"></i> Daftar</a><br>
+                <a href="{{ route('auth.index') }}" class="mx-1 text-decoration-none"><i class="fa-regular fa-user mx-2"></i> Daftar</a><br>
             </div>
         </div>
     </div>
