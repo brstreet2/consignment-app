@@ -9,14 +9,14 @@
         <div class="text-center">
             <p class="h3">Cari Transaksi</p>
             <form action="#" method="get" class="col-6 mx-auto" >
-                @csrf
+                {{ csrf_field() }}
 
                 <div class="form-group bg-dark-secondary text-light shadow-none text-start rounded-pill d-flex align-items-center">
                     <div class="col-1">
                         <i class="bi bi-journal-check fs-3 text-center mx-3"></i>
                     </div>
                     <div class="col-9">
-                        <input type="text" class="bg-transparent btn btn-outline-transparent align-items-center text-start btn-outline-none col-12 text-light">
+                        <input type="text" class="bg-transparent btn btn-outline-transparent align-items-center text-start btn-outline-none col-12 text-light" placeholder="Cari Invoice ID Kamu Disini...">
                     </div>
                     <div class="col-2 text-end">
                         <button type="submit" class="btn btn-warning rounded-pill col-12">Cari</button>
