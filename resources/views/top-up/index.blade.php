@@ -11,15 +11,15 @@
             @include('layouts.sidebar')
         </div>
 
-        <div class="col-xxl-10 col-xl-10 container-fluid mt-3 mb-5 px-3">
+        <div class="col-xxl-10 col-xl-10 mt-3 bg-black">
             <div class="bg-banner">
                 {{-- Image Ratio 763 x 260 --}}
-                <img src="{{ asset('images/detail-banner/mole-bg-banner.png') }}" class="rounded-4 img-fluid d-block mx-auto w-100" alt="...">
+                <img src="{{ asset('images/detail-banner/mole-bg-banner.png') }}" class="img-fluid d-block mx-auto w-100" alt="...">
                 <img src="{{ asset('images/product/mole-crop.png') }}" class="img-fluid w-10 rounded-4" alt="">
             </div>
     
     
-            <div class="row d-flex justify-content-around mt-5">
+            <div class="row d-flex mt-5 container-fluid">
                 {{-- kiri --}}
                 <div class="col-8">
                     <div class="card card-dark my-2 p-2 rounded-4">
@@ -276,12 +276,6 @@
     </div>
 
 </div>
-
-<footer>
-    <br>
-    <br>
-    <br>
-</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
