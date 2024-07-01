@@ -15,6 +15,7 @@ Route::get('/buy-account/name', [ProductController::class, 'buyAccountIndex'])->
 Route::get('/payment/token123', [ProductController::class, 'payment'])->name('product.payment');
 Route::get('/transaction', function(){ return view('transaction.list-trx'); })->name('list.transaction');
 Route::get('/transaction/check', function(){ return view('transaction.check'); })->name('check.transaction');
+Route::get('/faq', function(){ return view('dashboard.faq'); })->name('faq');
 
 // END {FE dummy Route Field}
 
