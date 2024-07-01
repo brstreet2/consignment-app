@@ -1,5 +1,5 @@
 <div class="d-lg-block mt-3 sticky-top sticky-offset">
-    <div class="rounded-4 overflow-auto m-2">
+    <div class="rounded-4 overflow-auto m-2 border-sm-dark">
         <div class="p-4 p-xl-3 bg-dark">
 
             <h6 class="fw-bold">MENU</h6>
