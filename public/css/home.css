@@ -15,7 +15,7 @@ body {
     color: aliceblue;
 }
 .hover-card-yellow:hover {
-    background-color: #ffa842;
+    background-color: #ff951c;
 }
 .hover-card-yellow:hover a{
     color: #000000;
@@ -42,8 +42,24 @@ body {
     background-color: #52545b;
 }
 
+.bg-white-azure {
+    background-color: rgb(232, 254, 254);
+}
+
+.bg-red {
+    background-color: #ff2020;
+}
+
+.bg-green {
+    background-color: #3bea00;
+}
+
 .bg-yellow {
-    background-color: #ffa842;
+    background-color: #ff951c;
+}
+
+.bg-yellow-darker {
+    background-color: #ff8800;
 }
 
 .bg-dark-secondary {
@@ -57,6 +73,9 @@ body {
 .text-yellow {
     color: #ffa842;
 }
+.text-yellow-dark {
+    color: #ff8800;
+}
 
 .pointer {
     cursor: pointer;
@@ -64,6 +83,13 @@ body {
 
 .btn-outline-none {
     border: transparent;
+}
+
+.skew-15 {
+    transform: skew(-15deg);
+}
+.skew-15 p{
+    transform: skew(15deg);
 }
 /* END global */
 
@@ -81,7 +107,7 @@ body {
 }
 
 .btn-warning {
-    background-color: #ffa842; 
+    background-color: #ff951c; 
     color: white;
     border-radius: 12px
 }
