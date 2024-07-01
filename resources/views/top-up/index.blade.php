@@ -22,7 +22,7 @@
             <div class="row d-flex mt-5 container-fluid">
                 {{-- kiri --}}
                 <div class="col-8">
-                    <div class="card card-dark my-2 p-2 rounded-4">
+                    <div class="card card-dark my-2 p-2 rounded-3">
                         <div class="card-body">
                             <h5 class="card-title mb-4">Mobile Legends Bang Bang</h5>
                             <h6 class="card-subtitle text-muted">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
     
-                    <div class="card card-dark my-4 p-2 rounded-4">
+                    <div class="card card-dark my-4 p-2 rounded-3">
                         <div class="card-body">
                             <!-- Nav tabs -->
                             <div class="d-flex">
@@ -70,7 +70,7 @@
                 {{-- kanan --}}
                 <div class="col-4">
                     {{-- Informasi Akun --}}
-                    <div class="card p-2 my-2 rounded-4" style="background-color: #252f45e6">
+                    <div class="card p-2 my-2 rounded-3" style="background-color: #252f45e6">
                         <div class="card-body">
                             <h5 class="card-title">2. Informasi Akun <i class="bi bi-question-circle fs-6" data-bs-toggle="modal" data-bs-target="#UID"></i> <label class="text-danger">*</label></h5>
                         </div>
@@ -113,7 +113,7 @@
                     </div>
     
                     {{-- Code Voucher --}}
-                    <div class="card p-2 my-4 rounded-4" style="background-color: #252f45e6">
+                    <div class="card p-2 my-4 rounded-3" style="background-color: #252f45e6">
                         <div class="card-body">
                             <h5 class="card-title">3. Voucher Promo</h5>
                         </div>
@@ -129,7 +129,7 @@
                     </div>
              
                     {{-- Metode Pembayaran --}}
-                    <div class="card p-2 my-4 rounded-4" style="background-color: #252f45e6">
+                    <div class="card p-2 my-4 rounded-3" style="background-color: #252f45e6">
                         <div class="card-body">
                             <h5 class="card-title">4. Metode Pembayaran <label class="text-danger">*</label></h5>
                         </div>
@@ -212,7 +212,7 @@
                     </div>
     
                     {{-- Notifikasi Info --}}
-                    <div class="card p-2 my-2 rounded-4" style="background-color: #252f45e6">
+                    <div class="card p-2 my-2 rounded-3" style="background-color: #252f45e6">
                         <div class="card-body">
                             <h5 class="card-title">5. Notifikasi Info</h5>
                         </div>
