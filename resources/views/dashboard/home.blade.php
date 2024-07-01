@@ -11,7 +11,7 @@
         </div>
 
         {{-- content --}}
-        <div class="col-xxl-10 col-xl-10 col-md-12 bg-black">
+        <div class="col-xxl-10 col-xl-10 col-md-12 bg-black pb-3">
             @include('dashboard.banner-carousel')
         
             <div class="container my-4">

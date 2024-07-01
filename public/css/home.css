@@ -11,14 +11,14 @@ body {
     top: 15%;
 }
 
-.hover-card-yellow a{
+.hover-card-yellow {
     color: aliceblue;
 }
 .hover-card-yellow:hover {
     background-color: #ff951c;
 }
-.hover-card-yellow:hover a{
-    color: #000000;
+.hover-card-yellow:hover{
+    color: #000000 ;
 }
 
 /*  global */
