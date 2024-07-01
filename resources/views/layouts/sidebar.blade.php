@@ -1,6 +1,6 @@
 <div class="d-lg-block mt-3 sticky-top sticky-offset">
-    <div class="rounded-3 overflow-auto m-2 border-sm-dark">
-        <div class="p-4 p-xl-3 bg-dark">
+    <div class="overflow-auto m-2">
+        <div class="p-4 p-xl-3 bg-dark border-sm-dark rounded-3 ">
 
             <h6 class="fw-bold">MENU</h6>
             <a href="{{ route('home') }}" class="mx-1 text-decoration-none btn hover-card-yellow rounded-3 p-2 col-12 text-start">
@@ -48,5 +48,24 @@
             <br>
 
         </div>
+
+        <div class="text-center sticky-bottom">
+            <img src="{{ asset('images/gif/astronout.gif') }}" class="w-75 image-revert" 
+                data-bs-toggle="tooltip" 
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Butuh Bantuan?">
+        </div>
     </div>
+
 </div>
+
+<!-- Initialize Tooltips -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    });
+</script>
