@@ -92,6 +92,16 @@ body {
     border-radius: 12px; 
 }
 
+.border-sm-dark {
+    border-color: #000000; 
+    border-style: solid; 
+    border-width: 2px
+}
+
+#recommended-product {
+    background: linear-gradient(to bottom, #ffa842, #ffa74266);
+}
+
 #category {
     background-color: #0e101d;
     border-color: rgb(144, 147, 147);

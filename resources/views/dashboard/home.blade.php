@@ -11,9 +11,13 @@
         </div>
 
         {{-- content --}}
-        <div class="col-xxl-10 col-xl-10 col-md-12">
+        <div class="col-xxl-10 col-xl-10 col-md-12 bg-black">
             @include('dashboard.banner-carousel')
         
+            <div class="container my-4">
+                @include('dashboard.recommended')
+            </div>
+
             <!-- Nav tabs -->
             <div class="container mt-4 mb-2">
                 <div class="d-flex">
