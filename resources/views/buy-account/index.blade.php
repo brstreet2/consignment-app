@@ -8,7 +8,7 @@
         @include('layouts.sidebar')
     </div>
 
-    <div class="container-fluid col-xxl-10 col-xl-10">
+    <div class="container-fluid col-xxl-10 col-xl-10 bg-black">
         <div class="d-flex">
             <div class="col-8 py-3">
                 <div class="d-flex">
@@ -16,7 +16,7 @@
                         <div class="carousel-inner">
                             @for ($i = 0; $i < 5; $i++)
                                 <div class="carousel-item @if($i == 0) active @endif">
-                                    <img src="{{ asset('images/banner/pubg-banner.jpg') }}" class="d-block w-100 rounded-4" width="370" height="184">
+                                    <img src="{{ asset('images/banner/pubg-banner.jpg') }}" class="d-block w-100 rounded-3" width="370" height="184">
                                 </div>
                             @endfor
                         </div>
@@ -32,7 +32,7 @@
                         <div class="mt-2 d-flex justify-content-start row">
                             @for ($i = 0; $i < 5; $i++)
                                 <div class="col-2 m-1">
-                                    <img src="{{ asset('images/banner/pubg-banner.jpg') }}" class="rounded-4 img-fluid w-100 max-75px pointer" data-bs-target="#carouselBanner" data-bs-slide-to="{{ $i }}"  aria-current="true" aria-label="Slide {{ $i }}">
+                                    <img src="{{ asset('images/banner/pubg-banner.jpg') }}" class="rounded-3 img-fluid w-100 max-75px pointer" data-bs-target="#carouselBanner" data-bs-slide-to="{{ $i }}"  aria-current="true" aria-label="Slide {{ $i }}">
                                 </div>
                             @endfor
                         </div>
@@ -56,7 +56,7 @@
                             <span class="badge text-light bg-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Akun ini akan dikirimkan ke email kamu"><i class="bi bi-lightning-fill text-success"><small>Instant by Email</small></i></span>
                             <span class="badge text-light mx-3 bg-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Akun yang kamu beli terjamin aman">Anti Hackback</span>
                         </div>
-                        <div class="card mt-4 d-flex align-items-center bg-success rounded-4">
+                        <div class="card mt-4 d-flex align-items-center bg-success rounded-3">
                             <p class="text-light p-4 h4 fw-bold my-auto">
                                 <i class="bi bi-check-circle-fill text-light"></i> Akun Masih Tersedia
                             </p>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-12 mt-3">
-                    <div class="card p-3 rounded-4 bg-dark-secondary hover-shadow">
+                    <div class="card p-3 rounded-3 bg-dark-secondary hover-shadow">
                         <p class="fw-bold h3">DETAIL</p>
                         <p class="text-light">
                             Detail akun: (level/UC/skin/rank)
@@ -110,7 +110,7 @@
                 </div>
             </div>
             <div class="col-4 py-3 px-4">
-                <div class="card bg-dark-secondary p-3 rounded-4 hover-shadow sticky-top sticky-offset">
+                <div class="card bg-dark-secondary p-3 rounded-3 hover-shadow sticky-top sticky-offset">
                     <p class="fs-5 text-center fw-bold ">Informasi Pesanan</p>
                     <form action="{{ route('product.payment') }}" method="get" class="">
                         @csrf
