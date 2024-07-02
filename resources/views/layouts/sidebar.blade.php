@@ -28,9 +28,9 @@
             </a>
             <br>
             
-            <a href="#" class="mx-1 text-decoration-none btn hover-card-yellow rounded-3 p-2 col-12 text-start">
-                <i class="fa-solid fa-phone mx-2"></i> 
-                Hubungi Kami
+            <a href="{{ route('contact-us') }}" class="mx-1 text-decoration-none btn hover-card-yellow rounded-3 p-2 col-12 text-start">
+                <i class="fa-solid fa-phone mx-2 {{ (request()->route()->getName() == 'contact-us') ? 'text-yellow' : '' }}"></i> 
+                <small class="{{ (request()->route()->getName() == 'contact-us') ? 'text-yellow' : '' }} fs-6">Hubungi Kami</small>
             </a>
             <br>
             

@@ -16,6 +16,7 @@ Route::get('/payment/token123', [ProductController::class, 'payment'])->name('pr
 Route::get('/transaction', function(){ return view('transaction.list-trx'); })->name('list.transaction');
 Route::get('/transaction/check', function(){ return view('transaction.check'); })->name('check.transaction');
 Route::get('/faq', function(){ return view('dashboard.faq'); })->name('faq');
+Route::get('/contact-us', function(){ return view('dashboard.contact-us'); })->name('contact-us');
 
 // END {FE dummy Route Field}
 
