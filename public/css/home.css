@@ -69,6 +69,9 @@ body {
 .bg-dark-secondary {
     background-color: #252f45e6;
 }
+.bg-dark-third {
+    background-color: #171d2b;
+}
 
 .bg-transparent {
     background-color: #ffffff00;
@@ -207,38 +210,28 @@ animation: zoom-in-zoom-out 8s ease infinite;
 
 /* SEND BUTTON */
 .submitBtn {
-    width: 120px;
-    height: 40px;
-    border-radius: 30px;
-    border: none;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-weight: 600;
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #ffa842;
+    /* background-color: rgb(255, 56, 86); */
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: #a76d2b 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
     cursor: pointer;
-    color: white;
-    background: linear-gradient(to left,rgb(230, 35, 0),rgb(255, 174, 0));
-    letter-spacing: 0.7px;
   }
   
-  .submitBtn:hover .arrow {
-    animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
-  
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-10px);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-  
-  .submitBtn:active {
-    transform: scale(0.97);
-  }
+.submitBtn:hover {
+    box-shadow: #a76d2b 0px 7px 0px 0px;
+}
+
+.submitBtn:active {
+    background-color: #ffa842;
+    /* background-color: rgb(255, 56, 86); */
+    /*50, 168, 80*/
+    box-shadow: #a76d2b 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}  
