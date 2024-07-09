@@ -36,17 +36,18 @@
             <div class="container ">
 
                 {{-- Logo --}}
-                <div class="col-md-7 d-flex align-items-center">
-                    <a class="navbar-brand" href="{{ route('home') }}">
+                <a class="navbar-brand" href="{{ route('home') }}">
+                    <div class="col-md-7 d-flex align-items-center">
                         <img src="{{ asset('images/navbar/logo.png') }}" alt="" width="50">
-                    </a>
-                    <h3 class="text-light">
-                        Kalem
-                    </h3>
-                    <h3 class="text-light">
-                        Store
-                    </h3>
-                </div>
+                    
+                        <h3 class="text-light">
+                            Kalem
+                        </h3>
+                        <h3 class="text-light">
+                            Store
+                        </h3>
+                    </div>
+                </a>
 
                 {{-- Search --}}
                 <div class="col-md-5 d-flex justify">

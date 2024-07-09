@@ -12,6 +12,7 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 
 Route::get('/top-up/name', [ProductController::class, 'topUpIndex'])->name('top-up.index');
 Route::get('/buy-account/name', [ProductController::class, 'buyAccountIndex'])->name('buy-account.index');
+Route::get('/products', [ProductController::class, 'getAllProducts'])->name('get.products');
 Route::get('/payment/token123', [ProductController::class, 'payment'])->name('product.payment');
 Route::get('/transaction', function(){ return view('transaction.list-trx'); })->name('list.transaction');
 Route::get('/transaction/check', function(){ return view('transaction.check'); })->name('check.transaction');

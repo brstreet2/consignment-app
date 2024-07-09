@@ -18,4 +18,9 @@ class ProductController extends Controller
     {
         return view('top-up.payment');
     }
+
+    public function getAllProducts()
+    {
+        return view('products.all');
+    }
 }
